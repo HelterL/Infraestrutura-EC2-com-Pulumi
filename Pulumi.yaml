@@ -1,0 +1,6 @@
+name: ec2_infra_pulumi
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Testando EC2 com pulumi
