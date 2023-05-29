@@ -1,7 +1,7 @@
 # Infraestrutura-EC2-com-Pulumi
 Criação de uma infraestrutura como código na cloud AWS utilizando a ferramenta pulumi na linguagem python.
 
-# Infraestrura:
+## Infraestrura:
  * 1 - VPC
  * 4 - Subnets, sendo 2 públicas e 2 privadas
  * 1 - Internet Gateway
