@@ -176,7 +176,7 @@ script_base64 = base64.b64encode(script.encode('utf-8')).decode('utf-8')
 launch_template = aws.ec2.LaunchTemplate('example-launch-template',
     image_id='ami-053b0d53c279acc90', # Imagem ubuntu 22.04 lts 
     instance_type='t2.micro',
-    key_name='suachavecomfinalpem',
+    key_name='suachavesemfinalpem',
     network_interfaces=[aws.ec2.LaunchTemplateNetworkInterfaceArgs(
         associate_public_ip_address=True,
         device_index=0,
@@ -243,7 +243,7 @@ listener = aws.lb.Listener('example-listener',
 instance_main = aws.ec2.Instance(
     "Ansible-server",
     instance_type="t2.micro",
-    key_name='suachavecomfinalpem',
+    key_name='suachavesemfinalpem',
     ami="ami-053b0d53c279acc90", #Ubuntu 22.04 lts
     tags={
         "Name": "Ansible-server",
